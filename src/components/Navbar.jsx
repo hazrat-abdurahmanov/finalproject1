@@ -1,7 +1,7 @@
 import React from 'react'
-import logo from '../logo.jpg'
+import logo from '../logo.png'
 
-function Navbar() {
+const Navbar = () => {
     return (
         
             <nav className="navbar navbar-expand-lg navbar-light bg-dark">
