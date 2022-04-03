@@ -11,9 +11,12 @@
     --primary-transparent-black:rgba(0,0,0,.7);
     --primary-green: rgb(0,255,0);
 }
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 nav{
     z-index: 2;
+    background: var(--primary-black);
+    /* border-bottom: 1px solid #555; */
 }
 
 /* nav ul{
@@ -44,7 +47,7 @@ nav ul li{
 .navbar-nav > li > a.active,
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus{
-    border-top: 0.15rem solid var(--primary-orange);
+    border-top: 0.15rem solid var(--primary-white);
 }
 
 /* Header kodlari */
@@ -67,11 +70,12 @@ nav ul li{
     justify-content: center;
 }
 .main-info h1{
-    color: var(--primary-orange);
+    color: var(--primary-white);
 }
 .typed-text{
     font-size: 2rem;
     color: var(--primary-white);
+    font-family: 'Inconsolata', monospace;
 }
 
 
@@ -96,6 +100,36 @@ nav ul li{
 }
 .downloadcv:hover{
     text-decoration: none;
-    background: var(--primary-hover-red);
-    color: var(--primary-white);
+    background: var(--primary-white);
+    color: var(--primary-black);
+    border: 1px solid var(--primary-black);
+}
+
+/* AboutMe kodlari */
+.photo-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 1px solid var(--primary-hover-red);
+    padding: .25rem;
+    object-fit: cover;
+}
+.about-heading{
+    color: var(--primary-hover-red);
+    text-transform: uppercase;
+}
+
+@media(max-width:768px){
+    .about-heading{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .p-text{
+        text-align: justify;
+    }
 }

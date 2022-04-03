@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 //Komponentler gelecek
 import Navbar from './components/Navbar'
 import Header from './components/Header' 
+import AboutMe from './components/AboutMe'
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
 
       <Navbar />
       <Header />
+      <AboutMe />
+      <ContactUs />
 
     </div>
 

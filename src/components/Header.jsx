@@ -10,12 +10,13 @@ const Header = () => {
                 <Typed
                     className="typed-text"
                     strings={[
-                        'Hello',
-                        'Whats up ?',
-                        'What do you doing man?']}
+                        'Information Technology Engineer',
+                        'Web Deweloper',
+                    ]}
                     typeSpeed={40}
                     backSpeed={50}
                     loop >
+                    {/* Props */}
 
                 </Typed>
 
