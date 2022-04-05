@@ -13,8 +13,12 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+
 nav{
-    z-index: 2;
+    z-index: 500;
     background: var(--primary-black);
     /* border-bottom: 1px solid #555; */
 }
@@ -132,4 +136,54 @@ nav ul li{
     .p-text{
         text-align: justify;
     }
+}
+
+.services{
+    text-align: center;
+    background: var(--primary-light-grey);
+    padding-bottom: 2rem;
+}
+.services h1{
+    text-transform: uppercase;
+}
+.services .circle{
+    position: relative;
+    margin: .0375rem auto;
+    background: var(--primary-orange);
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+}
+.services .circle .icon{
+    font-size: 1.4rem;
+    color: var(--primary-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.services .box h2{
+    margin-top: 2.1rem;
+}
+.services .box{
+    background: var(--primary-white);
+    border-bottom: .3125rem solid var(--primary-orange);
+    padding: .625rem;
+    margin-bottom: 1.875;
+    height: 310px;
+    transition: all .7s ease-in-out;
+}
+.services .box:hover{
+    cursor: pointer;
+    background: var(--primary-orange);
+    border-bottom: .3125rem solid var(--primary-dark);
+}
+.services .box:hover .icon{
+    color: var(--primary-dark);
+}
+.services .box:hover .circle{
+    background: var(--primary-white);
+}
+.services .box:hover p{
+    color: var(--primary-white);
 }
