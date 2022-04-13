@@ -1,13 +1,16 @@
 import React from 'react'
 import Typed from 'react-typed'
 import cv from '../bg.jpg'
+import facebook from '../facebook.svg'
 
 const Header = () => {
     return (
         <div className="header-wrapper">
 
             <div className="main-info">
+                
                 <h1>Web development and website services</h1>
+
                 <Typed
                     className="typed-text"
                     strings={[

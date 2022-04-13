@@ -175,7 +175,7 @@ nav ul li{
     height: 3.125rem;
     border-radius: 50%;
 }
-.services .circle .icon{
+.services .circle .s-icon{
     font-size: 1.4rem;
     color: var(--primary-white);
     position: absolute;
@@ -199,7 +199,7 @@ nav ul li{
     background: var(--primary-orange);
     border-bottom: .3125rem solid var(--primary-dark);
 }
-.services .box:hover .icon{
+.services .box:hover .s-icon{
     color: var(--primary-dark);
 }
 .services .box:hover .circle{
