@@ -1,10 +1,11 @@
 import React from 'react'
 import Typed from 'react-typed'
-import shekil from '../bg.jpg'
+import cv from '../bg.jpg'
 
 const Header = () => {
     return (
         <div className="header-wrapper">
+
             <div className="main-info">
                 <h1>Web development and website services</h1>
                 <Typed
@@ -20,7 +21,7 @@ const Header = () => {
 
                 </Typed>
 
-                <a href={shekil} className='downloadcv' download>Download CV</a>
+                <a href={cv} className='downloadcv' download>Download CV</a>
             </div>
         </div>
     )

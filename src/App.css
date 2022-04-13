@@ -53,6 +53,26 @@ nav ul li{
 .navbar-nav > li > a:focus{
     border-top: 0.15rem solid var(--primary-white);
 }
+.icon{
+    background: transparent;
+    border: none;
+    outline: none;
+    display: none;
+    font-size: 36px;
+}
+.icon:focus{
+    outline: none;
+}
+.fa-bars{
+    background: transparent !important;
+    color: #fff;
+}
+
+@media(max-width: 990px){
+    .icon{
+        display: block;
+    }
+}
 
 /* Header kodlari */
 .header-wrapper{
@@ -110,7 +130,7 @@ nav ul li{
 }
 
 /* AboutMe kodlari */
-.photo-wrap{
+/* .photo-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,9 +156,9 @@ nav ul li{
     .p-text{
         text-align: justify;
     }
-}
+} */
 
-/* Services */
+/* Services kodlari */
 .services{
     text-align: center;
     background: var(--primary-light-grey);
@@ -189,7 +209,7 @@ nav ul li{
     color: var(--primary-white);
 }
 
-/* Experience */
+/* Experience kodlari */
 .experience{
     padding: .7rem;
 }
@@ -260,7 +280,45 @@ nav ul li{
         direction: ltr;
         width: 100%;
     }
+}
 
-
+/* ContactUs kodlari */
+.contacts{
+    background: var(--primary-dark);
+    padding: 3rem 0;
+}
+.contacts h1{
+    color: var(--primary-hover-red);
 
 }
+
+/* AboutMe */
+
+
+.photo-wrap{
+    display: flex;
+    justify-content: center;
+
+}
+.photo-wrap img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    border: 1px solid var(--primary-orange);
+    padding: .3rem;
+    object-fit: cover;
+}
+.about-heading{
+    text-transform: uppercase;
+}
+
+@media(max-width:768px){
+    .about-heading{
+        text-align: center;
+    }
+    .row{
+        gap: 1.2rem;
+    }
+}
+
+

@@ -4,17 +4,22 @@ import emailjs from '@emailjs/browser';
 const ContactUs = () => {
 
     const form = useRef();
+    const SERVICE_ID = 'service_4s2rxq4'
+    const TEMPLATE_ID = 'template_5g8d23h'
+    const USER_ID ='b5fo3031ieSBPkLVz'
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+
+            form.current.reset()
+    };
 
     // service_4s2rxq4
 
@@ -35,7 +40,7 @@ const ContactUs = () => {
                                 type="text"
                                 placeholder='Enter your name'
                                 className='form-control'
-                                name='istifadechi_adi'
+                                name='name'
                             />
                             <div className="line"></div>
                         </div>
@@ -79,15 +84,16 @@ const ContactUs = () => {
                                 className='form-control'
                                 placeholder='describe your need'
                             />
-
+                            
+                            <div className="line"></div>
                         </div>
 
-        
+
                         <button type='submit' className='btn btn-danger'>Send</button>
                     </div>
-                    
+
                 </div>
-                
+
                 </form>
 
 

@@ -1,6 +1,7 @@
 
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+
 
 //Komponentler gelecek
 import Navbar from './components/Navbar'
