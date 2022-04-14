@@ -95,13 +95,13 @@ nav ul li{
 }
 .main-info h1{
     color: var(--primary-white);
+    text-align: center;
 }
 .typed-text{
     font-size: 2rem;
     color: var(--primary-white);
     font-family: 'Inconsolata', monospace;
 }
-
 
 @media(max-width: 768px){
     .main-info h1{
@@ -111,6 +111,7 @@ nav ul li{
         font-size: 1.7rem !important;
     }
 }
+
 
 .downloadcv{
     border: 1px solid var(--primary-white);
@@ -197,15 +198,19 @@ nav ul li{
 .services .box:hover{
     cursor: pointer;
     background: var(--primary-orange);
-    border-bottom: .3125rem solid var(--primary-dark);
+    border-bottom: .3125rem solid var(--primary-orange);
 }
 .services .box:hover .s-icon{
-    color: var(--primary-dark);
+    /* color: var(--primary-dark); */
+    color: var(--primary-orange);
 }
 .services .box:hover .circle{
     background: var(--primary-white);
 }
 .services .box:hover p{
+    color: var(--primary-white);
+}
+.services .box:hover h2{
     color: var(--primary-white);
 }
 
@@ -282,15 +287,6 @@ nav ul li{
     }
 }
 
-/* ContactUs kodlari */
-.contacts{
-    background: var(--primary-dark);
-    padding: 3rem 0;
-}
-.contacts h1{
-    color: var(--primary-hover-red);
-
-}
 
 /* AboutMe */
 
@@ -321,4 +317,36 @@ nav ul li{
     }
 }
 
-
+/* ContactUs kodlari */
+.contacts{
+    background: var(--primary-dark);
+    padding: 3rem 0;
+}
+.contacts h1{
+    color: var(--primary-hover-red);
+    padding: 1.3rem;
+    text-transform: uppercase;
+}
+.contacts p{
+    color: var(--primary-light-grey);
+    font-size: 1.2rem;
+}
+/* contacts input */
+.contacts input, .contacts textarea{
+    background: none;
+    border: none;
+    resize: none;
+    color: var(--primary-hover-red);
+    /* outline: none !important; */
+}
+.contacts input:focus, .contacts textarea:focus{
+    background: transparent;
+    border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+.contacts textarea{
+    height: 12.2rem;
+    /* !important - ust setre */
+} 
+.contact-btn{
+    margin: 1rem 0 0 0;    
+}

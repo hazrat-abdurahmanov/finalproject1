@@ -82,7 +82,7 @@ const ContactUs = () => {
                             <textarea
                                 name="message"
                                 className='form-control'
-                                placeholder='describe your need'
+                                placeholder='Describe your need'
                             />
                             
                             <div className="line"></div>
