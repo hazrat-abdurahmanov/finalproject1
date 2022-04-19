@@ -1,8 +1,11 @@
 :root{
     --primary-white: #fff;
     --primary-light-grey: #f4f4f4;
+    --primary-grey-ed: #ededed;
     --primary-grey: #ccd1d9;
+    --primary-grey-a: #aaa;
     --primary-dark-grey: #666;
+    --primary-dark-grey-4b: #4b4c4d;
     --primary-orange: #f9ab00;
     --primary-dark: rgb(52,58,64);
     --primary-red: #ef4035;
@@ -22,15 +25,9 @@
 nav{
     z-index: 500;
     background: var(--primary-black);
-    /* border-bottom: 1px solid #555; */
 }
 
-/* nav ul{
-    overflow: hidden;
-} */
-
 /* Navbarin kodlari */
-
 .logo{
     width: 4.5rem; 
 }
@@ -114,7 +111,6 @@ nav ul li{
     }
 }
 
-
 .downloadcv{
     border: 1px solid var(--primary-white);
     padding: .625rem;
@@ -133,7 +129,7 @@ nav ul li{
 }
 
 /* AboutMe kodlari */
-/* .photo-wrap{
+.photo-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,8 +143,13 @@ nav ul li{
     object-fit: cover;
 }
 .about-heading{
-    color: var(--primary-hover-red);
+    display: inline-block;
+    color: var(--primary-dark);
     text-transform: uppercase;
+    transition: .5s;
+}
+.about-heading:hover{
+    color: var(--primary-hover-red);
 }
 
 @media(max-width:768px){
@@ -159,7 +160,7 @@ nav ul li{
     .p-text{
         text-align: justify;
     }
-} */
+}
 
 /* Services kodlari */
 .services{
@@ -172,13 +173,10 @@ nav ul li{
 }
 .services .circle{
     position: relative;
-    /* margin: .0375rem auto;  */
-
     background: var(--primary-orange);
     width: 3.125rem;
     height: 3.125rem;
     border-radius: 50%;
-    
 }
 .services .circle .s-icon{
     font-size: 1.4rem;
@@ -207,7 +205,6 @@ nav ul li{
     border-bottom: .3125rem solid var(--primary-orange);
 }
 .services .box:hover .s-icon{
-    /* color: var(--primary-dark); */
     color: var(--primary-orange);
 }
 .services .box:hover .circle{
@@ -219,6 +216,7 @@ nav ul li{
 .services .box:hover h2{
     color: var(--primary-white);
 }
+
 /* Flipcard */
 .row{
     perspective: 1000px;
@@ -227,7 +225,6 @@ nav ul li{
     position: relative;
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
-    
 }
 .box:hover{
     transform: rotateY(180deg);
@@ -244,12 +241,11 @@ nav ul li{
     align-items: center;
 }
 .box_front .circle{
-    /* left: 102px; */
     top: 15px;
 }
 .box_front h2{
     position: absolute;
-    top: 100px;  
+    top: 100px;
 }
 .box_back{
     width: 100%;
@@ -258,7 +254,7 @@ nav ul li{
     left: 0;
     top: 0;
     backface-visibility: hidden;
-    transform: rotateY(-180deg);
+    transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,7 +266,6 @@ nav ul li{
      position: absolute;
     top: 100px;
 }
-
 
 /* Experience kodlari */
 .experience{
@@ -345,36 +340,6 @@ nav ul li{
     }
 }
 
-
-/* AboutMe */
-
-
-.photo-wrap{
-    display: flex;
-    justify-content: center;
-
-}
-.photo-wrap img{
-    width: 16rem;
-    height: 16rem;
-    border-radius: 50%;
-    border: 1px solid var(--primary-orange);
-    padding: .3rem;
-    object-fit: cover;
-}
-.about-heading{
-    text-transform: uppercase;
-}
-
-@media(max-width:768px){
-    .about-heading{
-        text-align: center;
-    }
-    .row{
-        gap: 1.2rem;
-    }
-}
-
 /* ContactUs kodlari */
 .contacts{
     background: var(--primary-dark);
@@ -395,7 +360,6 @@ nav ul li{
     border: none;
     resize: none;
     color: var(--primary-hover-red);
-    /* outline: none !important; */
 }
 .contacts input:focus, .contacts textarea:focus{
     background: transparent;
@@ -403,7 +367,6 @@ nav ul li{
 }
 .contacts textarea{
     height: 12.2rem;
-    /* !important - ust setre */
 } 
 .contact-btn{
     margin: 1rem 0 0 0;    
@@ -414,10 +377,10 @@ nav ul li{
     padding: .625rem 1.75rem .65rem;
     color: var(--primary-white);
     background: none;
+    transition: 1s ease-in-out;
 }
 .btn-main-offer:hover{
     background: var(--primary-hover-red);
-    transition: 1s ease-in-out;
 }
 .line{
     position: relative;
@@ -435,12 +398,12 @@ input:focus+.line, textarea:focus+.line{
 /* Footer */
 .footer{
     padding: 40px 0;
-    background: #ededed;
+    background: var(--primary-grey-ed);
 }
 .social-media{
     text-align: center;
     padding-bottom: 25px;
-    color: #4b4c4d;
+    color: var(--primary-dark-grey-4b);
 }
 .social-media a{
     color: inherit;
@@ -448,7 +411,7 @@ input:focus+.line, textarea:focus+.line{
     width: 40px;
     height: 40px;
     line-height: 38px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--primary-grey);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -481,5 +444,5 @@ input:focus+.line, textarea:focus+.line{
     margin-top: 15px;
     text-align: center;
     font-size: 14px;
-    color: #aaa;
+    color: var(--primary-grey-a);
 }

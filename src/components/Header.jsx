@@ -1,6 +1,6 @@
 import React from 'react'
 import Typed from 'react-typed'
-import cv from '../bg.jpg'
+import cv from '../cv.PNG'
 import facebook from '../facebook.svg'
 
 const Header = () => {
@@ -14,12 +14,11 @@ const Header = () => {
                     className="typed-text"
                     strings={[
                         'Information Technology Engineer',
-                        'Web Deweloper',
+                        'Web Developer'
                     ]}
                     typeSpeed={40}
                     backSpeed={50}
                     loop >
-                    {/* Props */}
 
                 </Typed>
 

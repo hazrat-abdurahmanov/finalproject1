@@ -11,7 +11,7 @@ const Experience = () => {
                 <div className='timeline-block timeline-block-right'>
                     <div className='marker'></div>
                     <div className="timeline-content">
-                        <h3>2012-2013</h3>
+                        <h3>2017-2021</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas sint corporis obcaecati maiores autem. Sequi delectus cumque facilis necessitatibus, ex quibusdam impedit dolorum voluptates deserunt tempora nesciunt eius labore?</p>
                     </div>
                 </div>
@@ -21,7 +21,7 @@ const Experience = () => {
                 <div className='timeline-block timeline-block-left'>
                     <div className='marker'></div>
                     <div className="timeline-content">
-                        <h3>2012-2013</h3>
+                        <h3>2020-2021</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas sint corporis obcaecati maiores autem. Sequi delectus cumque facilis necessitatibus, ex quibusdam impedit dolorum voluptates deserunt tempora nesciunt eius labore?</p>
                     </div>
                 </div>
@@ -29,18 +29,11 @@ const Experience = () => {
                 <div className='timeline-block timeline-block-right'>
                     <div className='marker'></div>
                     <div className="timeline-content">
-                        <h3>2012-2013</h3>
+                        <h3>2021-2022</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas sint corporis obcaecati maiores autem. Sequi delectus cumque facilis necessitatibus, ex quibusdam impedit dolorum voluptates deserunt tempora nesciunt eius labore?</p>
                     </div>
                 </div>
-
-                <div className='timeline-block timeline-block-left'>
-                    <div className='marker'></div>
-                    <div className="timeline-content">
-                        <h3>2012-2013</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas sint corporis obcaecati maiores autem. Sequi delectus cumque facilis necessitatibus, ex quibusdam impedit dolorum voluptates deserunt tempora nesciunt eius labore?</p>
-                    </div>
-                </div>
+       
 
             </div>
         </div>
