@@ -10,6 +10,7 @@ import AboutMe from './components/AboutMe'
 import Services from './components/Services'
 import Experience from './components/Experience'
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Services />
       <Experience />
       <ContactUs />
+      <Footer />
 
     </div>
 

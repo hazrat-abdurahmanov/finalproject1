@@ -32,7 +32,7 @@ const ContactUs = () => {
             </div>
 
             <div className='container'>
-                <form ref={form} onSubmit={sendEmail}> <div className='row'>
+                <form ref={form} onSubmit={sendEmail}> <div className='row' autoComplete="off">
                     <div className='col-md-6 col-xs-12'>
                         {/* Name input */}
                         <div className='text-center'>
@@ -89,7 +89,7 @@ const ContactUs = () => {
                         </div>
 
 
-                        <button type='submit' className='btn btn-danger'>Send</button>
+                        <button type='submit' className='btn-main-offer contact-btn'>Send</button>
                     </div>
 
                 </div>
